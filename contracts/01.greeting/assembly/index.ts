@@ -12,33 +12,9 @@ export function showYouKnow(): void {
   logging.log("showYouKnow() was called");
 }
 
-/**
- * sayHello is a
- * - "view" function (ie. does not alter state)
- * - that takes no parameters
- * - and returns a string
- *
- * - it has the side effect of appending to the log
- */
-export function sayHello(): string {
-  logging.log("sayHello() was called");
 
-  return "Hello!";
-}
 
-/**
- * sayMyName is a
- * - "call" function (although it does NOT alter state, it DOES read from context)
- * - that takes no parameters
- * - and returns a string
- *
- * - it has the side effect of appending to the log
- */
-export function sayMyName(): string {
-  logging.log("sayMyName() was called");
 
-  return "Hello, " + context.sender + "!";
-}
 
 /**
  * saveMyName is a
